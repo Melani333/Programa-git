@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - SEIO</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <header>SEIO</header>
+    <img src="../imagenes/SEIO LOG.png" alt="Logotipo SEIO">
+    <div class="form-container">
+        <form action="ruta_del_servidor" method="POST">
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellido" placeholder="Digite sus apellidos" required >
+            <label for="nombres">Nombres</label>
+            <input type="text" name="nombre" placeholder="Digite sus nombres" required>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" name="correo" placeholder="Digite su correo electrónico" required>
+            <label for="username">Usuario</label>
+            <input type="text" name="usuario" placeholder="Digite su usuario" required>
+            <label for="password">Contraseña</label>
+            <input type="password" name="contrasena" placeholder="Digite su contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+    </div>
+    <footer>
+        <p>&copy; 2024 SEIO. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang ="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados Evaluativos - SEIO</title>
+    <link rel="stylesheet" href="resultados.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            SEIO
+            <div class="header-right">
+                <ul class="icons">
+                    <li><a href="../docente/index.html"><img src="../imagenes/Inicio.png" alt="Inicio"></a></li>
+                    <li><a href="#"><img src="../imagenes/config.png" alt="Configuración"></a></li>
+                    <li><a href="#"><img src="../imagenes/Notificacion.png" alt="Notificaciones"></a></li>
+                </ul>
+            </div>
+        </header>
+        <header class="secondary-header">Bienvenido al módulo de Resultados Evaluativos</header>
+        <h2>Resultados Evaluativos</h2>
+        <div class="filtros-container">
+            <input type="text" id="filtroID" placeholder="Buscar por ID" onkeyup="filtrarResultados()">
+            <select id="filtroCorte" onchange="filtrarResultados()">
+                <option value="">Seleccionar Corte</option>
+                <option value="Corte 1">Corte 1</option>
+                <option value="Corte 2">Corte 2</option>
+                <option value="Corte 3">Corte 3</option>
+                <option value="Corte 4">Corte 4</option>
+            </select>
+            <input type="text" id="filtroCurso" placeholder="Buscar por Curso" onkeyup="filtrarResultados()">
+        </div>
+        <div class="tabla-container">
+            <table id="resultadosTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombres y Apellidos</th>
+                        <th>Identificación</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota 4</th>
+                        <th>Resultado del Corte 1</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Juan Pérez</td>
+                        <td>12345678</td>
+                        <td>4.5</td>
+                        <td>3.8</td>
+                        <td>4.2</td>
+                        <td>4.0</td>
+                        <td>4.13</td>
+                        <td class="acciones-icons">
+                            <a href="#"><img src="../imagenes/agregar.png" alt="Agregar"></a>
+                            <a href="#"><img src="../imagenes/editar.png" alt="Editar"></a>
+                            <a href="#"><img src="../imagenes/eliminar.png" alt="Eliminar"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>María García</td>
+                        <td>87654321</td>
+                        <td>3.5</td>
+                        <td>3.7</td>
+                        <td>4.0</td>
+                        <td>4.2</td>
+                        <td>3.85</td>
+                        <td class="acciones-icons">
+                            <a href="#"><img src="../imagenes/agregar.png" alt="Agregar"></a>
+                            <a href="#"><img src="../imagenes/editar.png" alt="Editar"></a>
+                            <a href="#"><img src="../imagenes/eliminar.png" alt="Eliminar"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="../mod_cuestionario/index.html" class="button">Regresar</a>
+            <button class="button">Siguiente</button>
+        </div>
+    </div>
+    <div class="footer-logo-container">
+        <img src="../imagenes/SEIO LOG.png" alt="Logotipo SEIO" class="footer-logo">
+        <p>Sistema Evaluativo Integral Online</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 SEIO. Todos los derechos reservados.</p>
+    </footer>
+    <script src="resultados_evaluativos.js"></script>
+</body>
+</html>

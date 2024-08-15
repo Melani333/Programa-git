@@ -1,0 +1,180 @@
+/* Reset de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: visible;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../imagenes/Fondo3.jpg'); /* Fondo de pantalla */
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    margin: 0; /* Añadido para asegurar que no haya margen */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0%; /* Añade padding para dar un poco de espacio alrededor del contenido */
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 64, 128, 0.8); /* Fondo traslúcido */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Asegura que esté por encima del contenido */
+}
+
+.main-header h1 {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.header-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-right .icons {
+    list-style-type: none;
+    display: flex;
+}
+
+.header-right .icons li {
+    margin: 0 10px;
+}
+
+.header-right .icons img {
+    width: 40px; /* Tamaño de los íconos */
+    height: auto;
+}
+
+.secondary-header {
+    width: 100%;
+    background-color: rgba(0, 64, 128, 0.6); /* Fondo traslúcido */
+    padding: 0.5em 0;
+    text-align: center;
+    margin-top: 1px;
+}
+
+.welcome-message {
+    color: white;
+    font-size: 1.2em;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto; /* Reduce el margen */
+}
+
+.sidebar {
+    width: 25%; /* Ajusta el ancho del contenedor */
+    background-color: rgba(33, 159, 190, 0.8);
+    padding: 10px; /* Reduce el padding */
+    border-radius: 10px;
+    text-align: center;
+    margin-right: -50px; /* Ajusta el margen derecho */
+    margin-left: -250px; /* Desplaza hacia la izquierda */
+}
+
+.docente-foto {
+    display: block;
+    margin: 0 auto 10px;
+    width: 100px; /* Reduce el tamaño de la foto */
+    height: auto;
+    border-radius: 50%; /* Hacer la imagen completamente redonda */
+}
+
+.titulo-docente {
+    font-size: 1em; /* Reduce el tamaño del texto */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.docente-info p {
+    margin: 5px 0; /* Reduce el margen */
+    font-size: 0.9em; /* Reduce el tamaño del texto */
+}
+
+.motivational-quote {
+    background-color: #004080;
+    color: white;
+    padding: 10px; /* Reduce el padding */
+    border-radius: 10px;
+    margin-top: 40px; /* Reduce el margen superior */
+    font-size: 0.9em; /* Reduce el tamaño del texto */
+}
+
+.modules {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cambia a dos columnas */
+    gap: 20px; /* Reduce el espacio entre los módulos */
+    flex: 1;
+    padding: 50px; /* Reduce el padding */
+    margin-left: 20px; /* Ajusta el margen izquierdo */
+}
+
+.modules h2 {
+    grid-column: span 2;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.module {
+    background-color: rgba(0, 64, 128, 0.8);
+    color: rgb(255, 255, 255);
+    padding: 20px 10px; /* Ajusta el padding */
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Asegura que los módulos ocupen todo el ancho disponible */
+    height: 200px; /* Ajusta la altura */
+}
+
+.module a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1em; /* Reduce el tamaño del texto */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    height: auto;
+    border-radius: 100%; /* Hacer la imagen completamente redonda */
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0; /* Reduce el padding */
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+}

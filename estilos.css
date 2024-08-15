@@ -1,0 +1,72 @@
+/* estilos.css */
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(imagenes/Fondo2.png);
+    background-size:cover;
+    background-position: center;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #007bb5; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+}
+
+/* Estilos para la imagen del logotipo */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 150px;
+    height: auto;
+}
+
+/* Estilos para el mensaje de bienvenida */
+h3 {
+    text-align: center;
+    color: #e6edf0; /* Azul medio */
+    margin: 20px 0;
+}
+
+/* Estilos para el botón */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+a.ingresar-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bb5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 30px 0;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+a.ingresar-btn:hover {
+    background-color: #005f8a;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #007bb5; /* Azul oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}

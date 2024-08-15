@@ -1,0 +1,178 @@
+/* Reset de márgenes y relleno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../imagenes/Fondo3.jpg'); /* Fondo de pantalla */
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+    margin: 0; /* Añadido para asegurar que no haya margen */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0%; /* Añade padding para dar un poco de espacio alrededor del contenido */
+}
+
+.main-header {
+    width: 100%;
+    background-color: rgba(0, 64, 128, 0.8); /* Fondo translúcido */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 2em;
+    position: relative;
+}
+
+.header-right {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-right .icons {
+    list-style-type: none;
+    display: flex;
+}
+
+.header-right .icons li {
+    margin: 0 10px;
+}
+
+.header-right .icons img {
+    width: 40px; /* Tamaño de los íconos */
+    height: auto;
+}
+
+.secondary-header {
+    width: 100%;
+    background-color: rgba(0, 64, 128, 0.6); /* Fondo traslúcido */
+    padding: 0.5em 0;
+    text-align: center;
+    margin-top: 2px; /* Aumenta el espacio entre el segundo header y el filtro */
+}
+
+.filtro-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px; /* Espacio entre el filtro y la tabla */
+}
+
+#filtroInput {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.tabla-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#cuestionariosTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cuestionariosTable th, 
+#cuestionariosTable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#cuestionariosTable th {
+    background-color: rgba(0, 64, 128, 0.8);
+    color: white;
+}
+
+#cuestionariosTable td {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.acciones-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.acciones-icons a {
+    text-decoration: none;
+}
+
+.acciones-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    background-color: rgba(0, 64, 128, 0.8); /* Fondo translúcido */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold; /* Letra en negrita */
+}
+
+.button:hover {
+    background-color: rgba(0, 64, 128, 1); /* Intensifica el color al pasar el cursor */
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+}
+
+footer {
+    width: 100%;
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+}
+
+.footer-logo-container p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: whitesmoke;
+}

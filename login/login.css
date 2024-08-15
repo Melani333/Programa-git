@@ -1,0 +1,130 @@
+/* login.css */
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('../imagenes/Fondo2.png') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* Ajustar la imagen al tamaño de la pantalla */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+    font-size: 2em;
+    margin: 0;
+}
+/* Contenedor principal del login */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Contenedor del logotipo */
+.logo-container {
+    border-radius: 15px;
+    overflow: hidden;
+    width: 150px;
+    height: 100px;
+    margin: 0 auto 20px; /* Centrado y espaciado inferior */
+}
+
+/* Estilos para la imagen del logotipo */
+.logo-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para el título */
+h1 {
+    color: #007bb5;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+   
+}
+
+form input {
+    width: 91%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de ingresar */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #005f8a;
+}
+
+/* Estilos para las opciones adicionales */
+.login-options {
+    margin-top: 20px;
+}
+
+.login-options button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f4f8;
+    color: #007bb5;
+    border: 1px solid #007bb5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-options button:hover {
+    background-color: #e0e4e8;
+}
+
+.login-options a {
+    color: #007bb5;
+    text-decoration: none;
+}
+
+.login-options a:hover {
+    text-decoration: underline;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+    font-size: 0.9em;
+}
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - SEIO</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>SEIO</header>
+    <div class="login-container">
+        <div class="logo-container">
+            <img src="../imagenes/SEIO LOG.png" alt="Logotipo SEIO">
+        </div>
+        <h1>Sistema Evaluativo Integral Online</h1>
+        <form action="login.php" method="post">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required placeholder="Digite su usuario">
+            
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required placeholder="Digite su contraseña">
+            
+            <button type="submit">Ingresar</button>
+        </form>
+        <div class="login-options">
+            <a href="http://127.0.0.1:5500/registro/index.html" target="_blank">Reguistrarse</a>
+            <a href="recuperar.html">¿Olvidaste tu contraseña?</a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 SEIO. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

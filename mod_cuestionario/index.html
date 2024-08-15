@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cuestionarios - SEIO</title>
+    <link rel="stylesheet" href="cuestionario.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+            SEIO
+            <div class="header-right">
+                <ul class="icons">
+                    <li><a href="../index.html"><img src="../imagenes/Inicio.png" alt="Inicio"></a></li>
+                    <li><a href="#"><img src="../imagenes/config.png" alt="Configuración"></a></li>
+                    <li><a href="#"><img src="../imagenes/Notificacion.png" alt="Notificaciones"></a></li>
+                </ul>
+            </div>
+        </header>
+        <header class="secondary-header">Bienvenido al módulo de gestión de cuestionarios</header>
+        <h2>Gestión de Cuestionarios</h2>
+        <div class="filtro-container">
+            <input type="text" id="filtroInput" placeholder="Buscar pregunta..." onkeyup="filtroCuestionarios()">
+        </div>
+        <div class="tabla-container">
+            <table id="cuestionariosTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Eje Temático</th>
+                        <th>Pregunta</th>
+                        <th>Opciones</th>
+                        <th>Respuesta</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Matemáticas</td>
+                        <td>¿Cuál es el resultado de 2+2?</td>
+                        <td>A) 3 B) 4 C) 5 D) 6</td>
+                        <td>B) 4</td>
+                        <td class="acciones-icons">
+                            <a href="#"><img src="../imagenes/agregar.png" alt="Agregar"></a>
+                            <a href="#"><img src="../imagenes/editar.png" alt="Editar"></a>
+                            <a href="#"><img src="../imagenes/eliminar.png" alt="Eliminar"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Física</td>
+                        <td>¿Cuál es la fórmula de la velocidad?</td>
+                        <td>A) d/t B) m/v C) v*t D) t/v</td>
+                        <td>A) d/t</td>
+                        <td class="acciones-icons">
+                            <a href="#"><img src="../imagenes/agregar.png" alt="Agregar"></a>
+                            <a href="#"><img src="../imagenes/editar.png" alt="Editar"></a>
+                            <a href="#"><img src="../imagenes/eliminar.png" alt="Eliminar"></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="button-container">
+            <a href="../mod_indicadores/index.html" class="button">Regresar</a>
+            <a href="../mod_resultados/index.html" class="button">Siguiente</a>
+        </div>
+    </div>
+    <div class="footer-logo-container">
+        <img src="../imagenes/SEIO LOG.png" alt="Logotipo SEIO" class="footer-logo">
+        <p>Sistema Evaluativo Integral Online</p>
+    </div>
+    <footer>
+        <p>&copy; 2024 SEIO. Todos los derechos reservados.</p>
+    </footer>
+    <script src="gestion_cuestionarios.js"></script>
+</body>
+</html>
